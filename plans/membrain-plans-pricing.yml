@@ -1,0 +1,23 @@
+generated: '2026-09-22'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://www.membrain.com/pricing
+sources:
+- https://www.membrain.com/pricing
+- https://www.membrain.com/blog/5-pricing-rules-i-wish-id-known-earlier
+- https://www.membrain.com/pricing
+- https://www.membrain.com/blog/new-sales-process-simplify-your-90-day-plan
+name: Membrain pricing
+audience: business-product
+pricing_basis: per-seat
+plans:
+- name: Tickets
+  price_text: 29 USD
+  price: 29
+  description: Product Extension – Get a 360-degree view of customers and enhance internal alignment with centralized customer data.
+- name: Flows
+  price_text: 19 USD
+  price: 19
+  description: Product Extension – With Flows, your organization executes with clarity, consistency, and strategic focus.
+docs: https://www.membrain.com/pricing
+note: 4 extracted row(s) were dropped because their quote was not on the page.

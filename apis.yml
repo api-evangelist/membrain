@@ -1,23 +1,97 @@
 aid: membrain
+
 name: Membrain
-description: 'Membrain is a company surfaced via the API Evangelist harvest backlog (source: crm) and
-  added to the network as a stub for full-pipeline profiling.'
+
+image: https://www.membrain.com/hubfs/Featured%20image-Membrain.png
+
+description: 'Membrain is a B2B growth platform that helps sales teams improve prospecting, pipeline management, account growth, and overall sales performance. It offers built-in tools, analytics, automation, and integrations to streamline the sales process, providing resources such as blogs, webinars, whitepapers, and a partner ecosystem. The platform targets sales managers, reps, marketing, HR, manufacturing, and MSPs, delivering a comprehensive solution for modern selling.'
+
 url: https://raw.githubusercontent.com/api-evangelist/membrain/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:crm
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-22 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-22'
+
 modified: '2026-09-22'
+
+x-coverage:
+  state: gated
+  reason: customer-only-docs
+  detail: API documentation requires login via developer portal
+  evidence:
+    - url: https://developer.membrain.com/Login.aspx
+      status: 200
+  checked: 2026-09-22
+
 tags:
 - Company
-apis: []
+- Sales
+- B2B
+- Platform
+- CRM
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Plans
+  url: plans/membrain-plans-pricing.yml
+- type: WellKnown
+  url: well-known/membrain-well-known.yml
+- type: Hosts
+  url: hosts/membrain-hosts.yml
+- type: Vendors
+  url: vendors/membrain-vendors.yml
+- type: Documentation
+  url: https://developer.membrain.com/
+- type: DomainSecurity
+  url: security/membrain-domain-security.yml
 - type: Website
   url: https://membrain.com/
+
+- type: Blog
+  url: https://www.membrain.com/blog
+- type: GettingStarted
+  url: https://www.membrain.com/sales-coaching-assessment?hsLang=en
+- type: Login
+  url: https://go.membrain.com/WebsiteLogin/
+- type: Pricing
+  url: https://www.membrain.com/pricing
+- type: PrivacyPolicy
+  url: https://www.membrain.com/legal/privacy-policy?hsLang=en
+- type: Support
+  url: https://www.membrain.com/help-center/?hsLang=en
+- type: TermsOfService
+  url: https://www.membrain.com/website-terms-of-use?hsLang=en
+
+apis:
+- aid: membrain:platform
+  name: Membrain Platform API
+  description: >-
+    Membrain provides a sales enablement platform with APIs for prospecting, pipeline management, and analytics.
+  humanURL: https://www.membrain.com/
+  tags:
+  - Sales
+  - B2B
+  - CRM
+  tags_raw:
+  - Sales
+  - B2B
+  - CRM
+  properties: []
+x-enrichment:
+  date: '2026-09-22'
+  status: enriched
+  artifacts_added: 28
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local
