@@ -1,0 +1,31 @@
+# Front Door AI Index — membrain — 2026-09-17
+# AI vocabulary counted on the provider's root page. Generated; do not edit.
+# `score` is null unless ownership is `own` — see front_door_ai.py.
+front_door_ai:
+  slug: membrain
+  lexicon_version: '1.0'
+  probed_at: '2026-09-25'
+  host: membrain.com
+  final_host: www.membrain.com
+  ownership: own
+  owner: membrain
+  shares_host_with: null
+  inherited_from: null
+  alias_of: null
+  verdict: scored
+  score: 4
+  band: 3
+  band_label: light
+  host_score: 4
+  density: 2.35
+  words: 1704
+  tiers:
+    agentic: 1
+    core: 3
+    model: 0
+  ambiguous: 3
+  top_terms:
+    AI: 3
+    intelligence: 2
+    automation: 1
+    prompts: 1
